@@ -1,0 +1,33 @@
+article {
+    display: flex;
+    justify-content: start;
+    margin: 40px 0px 40px 0px;
+}
+.escudo{
+    width: 200px;
+    height: 135px;
+}
+h2 {
+    margin-left: 20px;
+    font-size: 32px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin: 10px;
+}
+
+.detalles-equipo {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.descripcion-equipo {
+    margin-left: 20px;
+    width: 60%;
+}
+.plantilla{
+    color: gray;
+}

@@ -1,0 +1,492 @@
+[
+    {
+        "id": "1",
+        "club": "FC Barcelona",
+        "liga": "LaLiga",
+        "pais":"España",
+        "escudo":"/images/barcelona.png",
+        "plantilla": "Joan Garcia, Alejandro Balde, Eric Garcia, Pau Cubarsi, Joules Koundé, Pedri, Frenkie De Jong, Fermin Lopez, Raphinha, Rashford, Lamine Yamal",
+        "jugadores": [
+            {
+                "id": "1",
+                "name": "Joan Garcia",
+                "team": "Barcelona",
+                "position": "Arquero",
+                "price": "25.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "2",
+                "name": "Alejandro Balde",
+                "team": "Barcelona",
+                "position": "Defensa",
+                "price": "60.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "3",
+                "name": "Eric Garcia",
+                "team": "Barcelona",
+                "position": "Defensa",
+                "price": "25.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "4",
+                "name": "Pau Cubarsí",
+                "team": "Barcelona",
+                "position": "Defensa",
+                "price": "80.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "5",
+                "name": "Joules Koundé",
+                "team": "Barcelona",
+                "position": "Defensa",
+                "price": "65.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "6",
+                "name": "Pedri",
+                "team": "Barcelona",
+                "position": "Mediocampista",
+                "price": "140.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "7",
+                "name": "Frenkie De Jong",
+                "team": "Barcelona",
+                "position": "Mediocampista",
+                "price": "45.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "8",
+                "name": "Fermín Lopez",
+                "team": "Barcelona",
+                "position": "Mediocampista",
+                "price": "60.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "9",
+                "name": "Marcus Rashford",
+                "team": "Barcelona",
+                "position": "Delantero",
+                "price": "40.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "10",
+                "name": "Lamine Yamal",
+                "team": "Barcelona",
+                "position": "Delantero",
+                "price": "200.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "11",
+                "name": "Raphinha",
+                "team": "Barcelona",
+                "position": "Delantero",
+                "price": "90.000.000",
+                "image": "/images/"
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "club": "Arsenal",
+        "liga": "Premier League",
+        "pais":"Inglaterra",
+        "escudo":"/images/arsenal.png",
+        "plantilla": "David Raya, Riccardo Calafiori, Willam Saliba, Gabriel Magalhaes, Jurrien Timber, Martin Zubimendi, Declan Rice, Eberechi Eze, Bukayo Saka, Gabriel Martinelli, Viktor Gyokeres",
+        "jugadores": [
+            {
+                "id": "1",
+                "name": "David Raya",
+                "team": "Arsenal",
+                "position": "Arquero",
+                "price": "40.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "2",
+                "name": "Riccardo Calafiori",
+                "team": "Arsenal",
+                "position": "Defensa",
+                "price": "40.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "3",
+                "name": "Willam Saliba",
+                "team": "Arsenal",
+                "position": "Defensa",
+                "price": "80.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "4",
+                "name": "Gabriel Magalhaes",
+                "team": "Arsenal",
+                "position": "Defensa",
+                "price": "75.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "5",
+                "name": "Jurrien Timber",
+                "team": "Arsenal",
+                "position": "Defensa",
+                "price": "60.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "6",
+                "name": "Martin Zubimendi",
+                "team": "Arsenal",
+                "position": "Mediocampista",
+                "price": "70.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "7",
+                "name": "Declan Rice",
+                "team": "Arsenal",
+                "position": "Mediocampista",
+                "price": "120.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "8",
+                "name": "Eberechi Eze",
+                "team": "Arsenal",
+                "position": "Mediocampista",
+                "price": "65.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "9",
+                "name": "Bukayo Saka",
+                "team": "Arsenal",
+                "position": "Delantero",
+                "price": "140.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "10",
+                "name": "Gabriel Martinelli",
+                "team": "Arsenal",
+                "position": "Delantero",
+                "price": "45.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "11",
+                "name": "Viktor Gyokeres",
+                "team": "Arsenal",
+                "position": "Delantero",
+                "price": "75.000.000",
+                "image": "/images/"
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "club": "Paris Saint Germain",
+        "liga": "Ligue One",
+        "pais":"Francia",
+        "escudo":"/images/psg.png",
+        "plantilla": "Lucas Chevalier, Nuno Mendes, Marquinhos, William Pacho, Achraf Hakimi, Vitinha, Joao Neves, Fabian Ruiz, Ousmane Dembelé, Khvicha kvaratskhelia, Desiré Doué",
+        "jugadores": [
+            {
+                "id": "1",
+                "name": "Lucas Chevalier",
+                "team": "Paris Saint Germain",
+                "position": "Arquero",
+                "price": "40.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "2",
+                "name": "Nuno Mendes",
+                "team": "Paris Saint Germain",
+                "position": "Defensa",
+                "price": "75.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "3",
+                "name": "Marquinhos",
+                "team": "Paris Saint Germain",
+                "position": "Defensa",
+                "price": "35.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "4",
+                "name": "Willam Pacho",
+                "team": "Paris Saint Germain",
+                "position": "Defensa",
+                "price": "65.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "5",
+                "name": "Achraf Hakimi",
+                "team": "Paris Saint Germain",
+                "position": "Defensa",
+                "price": "80.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "6",
+                "name": "Vitinha",
+                "team": "Paris Saint Germain",
+                "position": "Mediocampista",
+                "price": "90.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "7",
+                "name": "Joao Neves",
+                "team": "Paris Saint Germain",
+                "position": "Mediocampista",
+                "price": "9.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "8",
+                "name": "Fabián Ruiz",
+                "team": "Paris Saint Germain",
+                "position": "Mediocampista",
+                "price": "40.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "9",
+                "name": "Ousmane Dembelé",
+                "team": "Paris Saint Germain",
+                "position": "Delantero",
+                "price": "100.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "10",
+                "name": "Khvicha Kvaratskhelia",
+                "team": "Paris Saint Germain",
+                "position": "Delantero",
+                "price": "90.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "11",
+                "name": "Desiré Doué",
+                "team": "Paris Saint Germain",
+                "position": "Delantero",
+                "price": "90.000.000",
+                "image": "/images/"
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "club": "Bayern Múnich",
+        "liga": "Bundesliga",
+        "pais":"Alemania",
+        "escudo":"/images/bayern-munich.png",
+        "plantilla": "Manuel Neuer, Konrad Laimer, Jonathan Tah, Dayot Upamecano, Sacha Boey, Aleksander Pavlovic, Joshua Kimmich, Nicolas Jackson, Luis Díaz, Michael Olise, Harry Kane",
+        "jugadores": [
+            {
+                "id": "1",
+                "name": "Manuel Neuer",
+                "team": "Bayern Múnich",
+                "position": "Arquero",
+                "price": "4.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "2",
+                "name": "Konrad Laimer",
+                "team": "Bayern Múnich",
+                "position": "Defensa",
+                "price": "25.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "3",
+                "name": "Jonathan Tah",
+                "team": "Bayern Múnich",
+                "position": "Defensa",
+                "price": "30.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "4",
+                "name": "Dayot Upamecano",
+                "team": "Bayern Múnich",
+                "position": "Defensa",
+                "price": "60.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "5",
+                "name": "Sacha Boey",
+                "team": "Bayern Múnich",
+                "position": "Defensa",
+                "price": "18.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "6",
+                "name": "Aleksander Pavlovic",
+                "team": "Bayern Múnich",
+                "position": "Mediocampista",
+                "price": "55.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "7",
+                "name": "Joshua Kimmich",
+                "team": "Bayern Múnich",
+                "position": "Mediocampista",
+                "price": "45.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "8",
+                "name": "Nicolas Jackson",
+                "team": "Bayern Múnich",
+                "position": "Mediocampista",
+                "price": "50.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "9",
+                "name": "Luis Díaz",
+                "team": "Bayern Múnich",
+                "position": "Delantero",
+                "price": "70.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "10",
+                "name": "Michael Olise",
+                "team": "Bayern Múnich",
+                "position": "Delantero",
+                "price": "130.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "11",
+                "name": "Harry Kane",
+                "team": "Bayern Múnich",
+                "position": "Delantero",
+                "price": "75.000.000",
+                "image": "/images/"
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "club": "Inter de Milán",
+        "liga": "Serie A",
+        "pais":"Italia",
+        "escudo":"/images/inter-de-milan.png",
+    "plantilla": "Yann Sommer, Alessandro Bastoni, Stefan de Vrij, Yann Bisseck, Carlos Augusto, Piotr Zielínski, Hakan Calhanoglu, Davide Frattesi, Dezel Dumfries, MArcus Thuram, Lautaro Martínez",
+        "jugadores": [
+            {
+                "id": "1",
+                "name": "Yann Sommer",
+                "team": "Inter de Milán",
+                "position": "Arquero",
+                "price": "4.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "2",
+                "name": "Alessandro Bastoni",
+                "team": "Inter de Milán",
+                "position": "Defensa",
+                "price": "80.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "3",
+                "name": "Stefan de Vrij",
+                "team": "Inter de Milán",
+                "position": "Defensa",
+                "price": "5.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "4",
+                "name": "Yann Bisseck",
+                "team": "Inter de Milán",
+                "position": "Defensa",
+                "price": "35.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "5",
+                "name": "Carlos Augusto",
+                "team": "Inter de Milán",
+                "position": "Mediocampista",
+                "price": "26.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "6",
+                "name": "Piotr Zielínski",
+                "team": "Inter de Milán",
+                "position": "Mediocampista",
+                "price": "10.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "7",
+                "name": "Hakan Calhanoglu",
+                "team": "Inter de Milán",
+                "position": "Mediocampista",
+                "price": "25.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "8",
+                "name": "Davide Frattesi",
+                "team": "Inter de Milán",
+                "position": "Mediocampista",
+                "price": "35.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "9",
+                "name": "Dezel Dumfries",
+                "team": "Inter de Milán",
+                "position": "Mediocampista",
+                "price": "35.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "10",
+                "name": "Marcus Thuram",
+                "team": "Inter de Milán",
+                "position": "Delantero",
+                "price": "75.000.000",
+                "image": "/images/"
+            },
+            {
+                "id": "11",
+                "name": "Lautaro Martínez",
+                "team": "Inter de Milán",
+                "position": "Delantero",
+                "price": "85.000.000",
+                "image": "/images/"
+            }
+        ]
+    }
+]
