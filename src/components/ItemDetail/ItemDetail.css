@@ -15,27 +15,3 @@
 .posiciones{
     font-size: 38px;
 }
-.contenedor-position {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.jugador-position {
-    margin-left: 20px;
-}
-.nombre-jugador{
-    font-size: 28px;
-}
-.contenedor-btn{
-    display: flex;
-    justify-content: center;
-}
-.comprar-boton {
-    border: rgb(14, 165, 14) solid;
-    background-color: rgb(14, 165, 14);
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-    font-weight: 800;
-}
