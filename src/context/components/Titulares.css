@@ -1,0 +1,88 @@
+:root {
+    ---arquero: 5%;
+    ---central: 16%;
+    ---lateral: 22%;
+    ---pivote: 32%;
+    ---volante: 42%;
+    ---extremo: 60%;
+    ---delantero: 68%;
+}
+
+.separacion {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+.jugador {
+    padding: 40px;
+    border-radius: 99px;
+    background-color: gray;
+}
+
+.espacio {
+    background-color: transparent !important;
+    padding: 40px;
+}
+
+.cancha {
+    margin: 0px;
+    justify-content: center;
+    position: relative;
+    background-color: rgb(215, 214, 214);
+}
+
+.cancha-img {
+    width: 40%;
+}
+
+.arquero {
+    position: absolute;
+    top: var(---arquero);
+}
+
+.central {
+    top: var(---central);
+}
+
+.central div {
+    margin: 20px;
+}
+
+.lateral {
+    top: var(---lateral);
+}
+
+.lateral div {
+    margin: 18px;
+}
+
+.pivote {
+    position: absolute;
+    top: var(---pivote);
+}
+
+.pivote div {
+    margin: 18px;
+}
+
+.volantes {
+    top: var(---volante);
+}
+
+.volantes div {
+    margin: 18px;
+}
+
+.extremo {
+    top: var(---extremo);
+}
+
+.extremo div {
+    margin: 10px;
+}
+
+.delantero {
+    position: absolute;
+    top: var(---delantero);
+}

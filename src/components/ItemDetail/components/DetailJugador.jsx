@@ -2,7 +2,7 @@ import "./DetailJugador.css"
 import { useCartContext } from "../../../context/CartContext/UseCartContext"
 
 export const DetailJugador = ({ jugadores }) => {
-    const { addItem } = useCartContext()
+    const { addItem, exists } = useCartContext()
     return <div className="contenedor-position">
         {jugadores.map((jugador) =>
             <div className="jugador-position" id={jugador.name}>
@@ -10,9 +10,10 @@ export const DetailJugador = ({ jugadores }) => {
                 <p className="nombre-jugador">{jugador.name}</p>
                 <p>{jugador.price} €</p>
                 <div className="contenedor-btn">
-                    <button className="comprar-boton" onClick={() => {
+                    <button className={exists(jugador.id) ? "comprado" : "comprar-boton"} onClick={({ target }) => {
                         addItem(jugador)
-                    }}>Comprar</button>
+                        exists(jugador.id) ? "" : target.style = "animation: fade-in .2s linear, fade-out .2s linear .2s forwards;"
+                    }}>{exists(jugador.id) ? "Comprado" : "Comprar"}</button>
                 </div>
             </div>
         )}

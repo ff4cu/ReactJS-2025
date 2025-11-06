@@ -1,0 +1,29 @@
+.contenedor-cart {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1), 0 20px 25px -5px rgb(0 0 0 / 0.1)
+}
+
+.plantilla-suplentes {
+    margin: 0px;
+    display: block;
+}
+
+.jugador-conteiner {
+    margin-left: 20px;
+}
+
+.nombre-jugador {
+    font-size: 28px;
+    margin: 24px;
+}
+.miclub,.miclub-suplentes{
+    font-size: 32px;
+    color: black;
+    margin: 10px;
+}
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+}

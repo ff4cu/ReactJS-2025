@@ -2,18 +2,22 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    position: relative;
 }
 
 .jugador-position {
-    margin-left: 20px;
+    margin: 20px;
 }
-.nombre-jugador{
+
+.nombre-jugador {
     font-size: 28px;
 }
-.contenedor-btn{
+
+.contenedor-btn {
     display: flex;
     justify-content: center;
 }
+
 .comprar-boton {
     border: rgb(14, 165, 14) solid;
     background-color: rgb(14, 165, 14);
@@ -21,4 +25,44 @@
     padding: 10px;
     border-radius: 10px;
     font-weight: 800;
+    position: absolute;
+    bottom: -15%;
+}
+
+.comprado {
+    background-color: rgb(200, 200, 200);
+    bottom: -15%;
+    border: rgb(200, 200, 200) solid;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 800;
+    position: absolute;
+}
+
+@keyframes fade-in {
+    0% {
+        background-color: rgb(14, 165, 14);
+        border: rgb(14, 165, 14) solid;
+    }
+
+    100% {
+        bottom: 40%;
+        background-color: rgb(14, 165, 14);
+        border: rgb(14, 165, 14) solid;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        background-color: rgb(14, 165, 14);
+        border: rgb(14, 165, 14) solid;
+        bottom: 40%;
+    }
+
+    100% {
+        bottom: -15%;
+        border: rgb(200, 200, 200) solid;
+        color: black;
+    }
 }

@@ -9,7 +9,7 @@ export const Nav = () => {
             <li><Link to={"/"}>Home</Link></li>
             <li><Link>Clubes</Link></li>
             <li><Link>Jugadores</Link></li>
-            <li><Link>Mi Plantilla</Link>
+            <li><Link to={"/plantilla"}>Mi Plantilla</Link>
                 {
                     getTotalItems() > 0 && (
                     <span className="total-cart">
