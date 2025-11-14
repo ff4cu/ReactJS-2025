@@ -1,0 +1,27 @@
+.clubes-pais {
+    display: none;
+    list-style: none;
+    background-color: white;
+    position: absolute;
+    bottom: -90px;
+    padding: 0px;
+}
+
+.clubes-pais>div>li {
+    padding: 5px 20px 5px 20px;
+}
+
+.clubes-pais>div>li:hover {
+    background-color: rgb(168, 168, 168);
+    border: .1px solid black;
+}
+
+.regiones {
+    position: relative;
+}
+
+.regiones>button {
+    text-align: center;
+    border: 0px solid;
+    font-weight: bolder;
+}

@@ -5,6 +5,7 @@ import { ItemListContainer } from './components/ItemListContainer/ItemListContai
 import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContainer'
 import { CartProvider } from './context/CartContext/CartProvider'
 import { Cart } from './context/Cart'
+import { ItemDestacadosConteiner } from './components/ItemDestacadosConteiner/ItemDestacadosConteiner'
 
 function App() {
 
@@ -13,12 +14,13 @@ function App() {
       <BrowserRouter>
         <CartProvider>
           <Nav />
-          <h1>Clubes - Temporada 2025/2026</h1>
           <div className="contenedor">
             <Routes>
-              <Route path="/" element={<ItemListContainer />} />
+              <Route path="/" element={<ItemListContainer titulo={"Clubes - Temporada 2025/2026"}/>} />
+              <Route path="/pais/:pais" element={<ItemListContainer titulo={"Clubes - Temporada 2025/2026"}/>} />
+              <Route path='/jugadores' element={<ItemDestacadosConteiner titulo={"Jugadores Más Valiosos - Temporada 2025/2026"}/>} />
               <Route path="/detail/:id" element={<ItemDetailContainer />} />
-              <Route path="/plantilla" element={<Cart/>} />
+              <Route path="/plantilla" element={<Cart />} />
             </Routes>
           </div>
         </CartProvider>

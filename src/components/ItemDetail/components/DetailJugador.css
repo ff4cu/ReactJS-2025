@@ -2,11 +2,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    position: relative;
 }
 
 .jugador-position {
-    margin: 20px;
+    position: relative;
+    margin: 60px 0px 60px 0px;
 }
 
 .nombre-jugador {
@@ -26,12 +26,12 @@
     border-radius: 10px;
     font-weight: 800;
     position: absolute;
-    bottom: -15%;
+    bottom: -35%;
 }
 
 .comprado {
     background-color: rgb(200, 200, 200);
-    bottom: -15%;
+    bottom: -35%;
     border: rgb(200, 200, 200) solid;
     color: black;
     padding: 10px;
@@ -61,7 +61,7 @@
     }
 
     100% {
-        bottom: -15%;
+        bottom: -35%;
         border: rgb(200, 200, 200) solid;
         color: black;
     }

@@ -1,0 +1,9 @@
+.destacados{
+    display: flex;
+    flex-wrap: wrap;
+}
+.titulo-destacados {
+    font-size: 32px;
+    color: white;
+    margin: 70 0px 70 0px;
+}

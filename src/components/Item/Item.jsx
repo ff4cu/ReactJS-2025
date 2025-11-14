@@ -2,7 +2,7 @@ import "./Item.css"
 
 export const Item = ({ club, pais,liga, escudo,plantilla, children }) => {
     return <article>
-        <img src={escudo} alt="Barcelona" className="escudo"/>
+        <img src={escudo} alt={club} className="escudo"/>
         {children}
         <div className="detalles-equipo">
             <h2>{club}</h2>
