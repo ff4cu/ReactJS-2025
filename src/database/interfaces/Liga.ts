@@ -1,19 +1,19 @@
 import { Club } from "./Club";
 
-export abstract class Liga {
+export class Liga {
     id: string;
     nombre: string;
     pais: string;
     clubes: Club[]
-    constructor({ id, nombre, pais, clubes }: {
+    constructor(
         id: string,
         nombre: string,
         pais: string,
         clubes: Club[]
-    }) {
+    ) {
         this.id = id,
-            this.nombre = nombre,
-            this.pais = pais,
-            this.clubes = clubes
+        this.nombre = nombre,
+        this.pais = pais,
+        this.clubes = clubes
     }
 }

@@ -1,23 +1,23 @@
-import { Plantilla } from "./Plantilla"
+import { Jugador } from "./Jugador";
 
 export class Club {
     id: string;
-    nombre: string;
+    club: string;
     pais: string;
     liga: string;
-    descripcion: string;
-    plantilla: Plantilla;
+    plantilla: string;
+    jugadores: Jugador[];
     constructor(id: string,
-        nombre: string,
+        club: string,
         pais: string,
         liga: string,
-        descripcion: string,
-        plantilla: Plantilla) {
+        plantilla: string,
+        jugadores: Jugador[]) {
         this.id = id,
-        this.nombre = nombre,
+        this.club = club,
         this.pais = pais,
         this.liga = liga,
-        this.descripcion = descripcion,
-        this.plantilla = plantilla
+        this.plantilla = plantilla,
+        this.jugadores = jugadores
     }
 }
