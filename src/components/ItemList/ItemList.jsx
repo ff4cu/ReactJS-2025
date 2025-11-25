@@ -1,15 +1,12 @@
-import { useState } from "react";
-import { Club, Liga } from "../../database/interfaces"
 import { Item } from "../Item/Item"
 import { Link } from "react-router-dom"
 
-export const ItemList = ({lista}) => {
-    // return <>
-    //     {lista.length ? (
-    //         lista.map((club) =>
-    //             <Link to={`/detail/${club.id}`} key={club.id}>
-    //                 <Item {...club} />
-    //             </Link>)
-    //     ) : (<p>No se encontraron jugadores</p>)}
-    // </>
+export const ItemList = ({ liga }) => {
+    return <>
+        {liga.map((key) =>
+            <Link to={`/detail/${key.id}`} key={key.id}>
+                <Item {...key} />
+            </Link>)
+        }
+    </>
 }
