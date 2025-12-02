@@ -1,29 +1,16 @@
-import { useEffect, useState } from "react"
+import { ligas } from "../../database/index"
 import { DetailJugador } from "../ItemDetail/components/DetailJugador"
 import "./ItemDestacadosConteiner.css"
 
-export const ItemDestacadosConteiner = ({titulo}) => {
-    const [club, setClubes] = useState([])
+export const ItemDestacadosConteiner = ({ titulo }) => {
     const jugadores = []
-    useEffect(() => {
-        fetch("https://6913fa20f34a2ff1170db941.mockapi.io/clubes")
-            .then((response) => {
-                if (!response.ok) {
-                    throw new Error("Hubo un problema")
-                }
-                return response.json();
-            })
-            .then((data) => {
-                setClubes(data)
-            })
-            .catch((error) => {
-                console.log(error);
-            })
-    }, [])
-    for (let key in club) {
-        let jugadoresLista = club[key].jugadores
-        for (let i in jugadoresLista) {
-            jugadores.push(jugadoresLista[i]);
+    for (let l in ligas) {
+        let clubesLista = ligas[l].clubes
+        for (let c in clubesLista) {
+            let jugadoresLista = clubesLista[c].jugadores
+            for (let j in jugadoresLista) {
+                jugadores.push(jugadoresLista[j])
+            }
         }
     }
     jugadores.map((j) => j.price = parseInt(j.price) * 1000);

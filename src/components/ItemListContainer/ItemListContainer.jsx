@@ -5,12 +5,12 @@ import { useParams } from "react-router-dom"
 import { ligas } from "../../database"
 
 export const ItemListContainer = ({ titulo }) => {
-    const [liga, setLiga] = useState([])
+    const [liga, setLiga] = useState(ligas)
     const { pais } = useParams()
     useEffect(() => {
         if (pais) {
             setLiga(ligas.filter((liga) => liga.pais === pais));
-        } else {
+        }else{
             setLiga(ligas)
         }
     }, [pais])

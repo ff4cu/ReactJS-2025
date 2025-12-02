@@ -1,11 +1,25 @@
-import { Liga } from "./interfaces";
-import { dataProvider } from "./dataProvider";
+import { Liga, Club } from "./interfaces";
 
 const ligas: Liga[] = []
-const bundesliga = new Liga("1", "Bundesliga", "Alemania", dataProvider("Alemania"))
-const laliga = new Liga("2", "LaLiga", "España", dataProvider("España"))
-const seriea = new Liga("3", "Serie A", "Italia", dataProvider("Italia"))
-const premierleague = new Liga("4", "Premier League", "Inglaterra", dataProvider("Inglaterra"))
-const ligueone = new Liga("5", "Ligue One", "Francia", dataProvider("Francia"))
-ligas.push(bundesliga, laliga, seriea, premierleague, ligueone)
+const dataProvider = (pais: string) => {
+    let clubes: Club[] = []
+    fetch("https://6913fa20f34a2ff1170db941.mockapi.io/clubes")
+        .then(response =>
+            response.json())
+        .then((data) => {
+            data.filter((c: Club) => {
+                if (c.pais === pais) {
+                    let nuevoClub = new Club(c.id, c.club, c.pais, c.liga, c.plantilla, c.jugadores)
+                    clubes = [...clubes, nuevoClub]
+                    const nuevaLIga = new Liga(c.id, c.liga, c.pais, clubes)
+                    ligas.push(nuevaLIga)
+                }
+            })
+        })
+}
+dataProvider("Francia")
+dataProvider("Alemania")
+dataProvider("Inglaterra")
+dataProvider("España")
+dataProvider("Italia")
 export { ligas }

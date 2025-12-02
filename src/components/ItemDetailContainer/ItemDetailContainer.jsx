@@ -1,35 +1,21 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import { ItemDetail } from "../ItemDetail/ItemDetail"
+import { ligas } from "../../database"
 
 export const ItemDetailContainer = () => {
     const [detail, setDetail] = useState({})
-    const {id} = useParams()
+    const { id } = useParams()
     useEffect(() => {
-        fetch("https://6913fa20f34a2ff1170db941.mockapi.io/clubes")
-            .then((response) => {
-                if (!response.ok) {
-                    throw new Error("Hubo un problema")
-                }
-                return response.json();
-            })
-            .then((data) => {
-                const club = data
-                const idClub = club.find((c)=>c.id === id)
-                if (idClub) {
-                    setDetail(idClub)
-                }else{
-                    throw new Error("Hubo un problema")
-                }
-            })
-            .catch((error) => {
-                console.log(error);
-            })
+        const idClub = ligas.find((c) => c.id === id)
+        if (idClub) {
+            setDetail(idClub)
+        } 
     }, [id])
     return <main>
-        {Object.keys(detail).length?(
-            <ItemDetail detail={detail}/>
-        ):(
+        {Object.keys(detail).length ? (
+            <ItemDetail clubes = {detail.clubes} />
+        ) : (
             <p>No encontrado</p>
         )}
     </main>
