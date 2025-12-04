@@ -12,6 +12,6 @@ export const Item = ({ clubes }) => {
                     </div>
                 </div>
             </article>
-        ) : <p>No se puede renderizar</p>}
+        ) : <p>No se encontraron datos</p>}
     </>
 }

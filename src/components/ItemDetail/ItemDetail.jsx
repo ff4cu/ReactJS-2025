@@ -25,6 +25,6 @@ export const ItemDetail = ({ clubes }) => {
                     <DetailJugador jugadores={club.jugadores.filter((j)=>j.position =="Delantero")} />
                 </div>
             </section>
-        ) : <p>No encontrado</p>}
+        ) : <p>No se encontraron datos</p>}
     </>
 }

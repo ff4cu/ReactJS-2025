@@ -16,7 +16,7 @@ export const ItemDetailContainer = () => {
         {Object.keys(detail).length ? (
             <ItemDetail clubes = {detail.clubes} />
         ) : (
-            <p>No encontrado</p>
+            <p>No se encontraron datos</p>
         )}
     </main>
 }

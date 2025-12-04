@@ -15,7 +15,6 @@ export const ItemDestacadosConteiner = ({ titulo }) => {
     }
     jugadores.map((j) => j.price = parseInt(j.price) * 1000);
     jugadores.sort(function (d1, d2) { return d1.price < d2.price ? 1 : -1 })
-
     return <div className="contenedor-main">
         <h1 className='titulo-destacados'>{titulo}</h1>
         <div className="contenedor-informacion">

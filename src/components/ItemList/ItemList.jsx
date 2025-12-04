@@ -3,10 +3,11 @@ import { Link } from "react-router-dom"
 
 export const ItemList = ({ liga }) => {
     return <>
-        {liga.length > 0 ? liga.map((key) =>
+        {liga.map((key) =>
             <Link to={`/detail/${key.id}`} key={key.id}>
+                {console.log(key)}
                 <Item {...key} />
             </Link>)
-            : <p>No se encontro liga</p>}
+        }
     </>
 }
