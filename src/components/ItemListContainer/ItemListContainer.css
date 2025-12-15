@@ -1,5 +1,20 @@
-main{
+.contenedor-main {
+    display: block
+}
+
+main {
     background-color: white;
-    width: 80%;
     padding: 30px;
+    width: 80%;
+}
+
+.titulo {
+    font-size: 32px;
+    color: white;
+    margin: 70 0px 70 0px;
+}
+
+.contenedor-informacion {
+    display: flex;
+    justify-content: center;
 }

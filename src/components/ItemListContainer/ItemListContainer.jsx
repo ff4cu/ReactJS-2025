@@ -9,11 +9,11 @@ export const ItemListContainer = ({ titulo }) => {
     useEffect(() => {
         fetch("https://6913fa20f34a2ff1170db941.mockapi.io/clubes")
             .then((response) => {
-            if (!response.ok) {
-                throw new Error("Hubo un problema")
-            }
-            return response.json();
-        })
+                if (!response.ok) {
+                    throw new Error("Hubo un problema")
+                }
+                return response.json();
+            })
             .then((data) => {
                 if (pais) {
                     setClubes(data.filter((club) => club.pais === pais))
