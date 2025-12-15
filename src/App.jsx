@@ -17,6 +17,7 @@ function App() {
             <Routes>
               <Route path="/" element={<ItemListContainer />} />
               <Route path="/detail/:id" element={<ItemDetailContainer />} />
+              <Route path='/carrito' element={<h1></h1>}></Route>
             </Routes>
           </div>
         </CartProvider>
