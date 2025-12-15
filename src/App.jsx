@@ -4,6 +4,7 @@ import { Nav } from "./components/Nav/Nav"
 import { ItemListContainer } from './components/ItemListContainer/ItemListContainer'
 import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContainer'
 import { CartProvider } from './context/CartContext/CartProvider'
+import { Cart } from './components/Cart/Cart'
 
 function App() {
 
@@ -17,7 +18,7 @@ function App() {
             <Routes>
               <Route path="/" element={<ItemListContainer />} />
               <Route path="/detail/:id" element={<ItemDetailContainer />} />
-              <Route path='/carrito' element={<h1></h1>}></Route>
+              <Route path='/carrito' element={<Cart/>}></Route>
             </Routes>
           </div>
         </CartProvider>
