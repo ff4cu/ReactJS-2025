@@ -5,6 +5,7 @@ import { ItemListContainer } from './components/ItemListContainer/ItemListContai
 import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContainer'
 import { CartProvider } from './context/CartContext/CartProvider'
 import { Cart } from './components/Cart/Cart'
+import { ProductFormContainer } from './components/AdminComponents/ProductFormContainer/ProductFormContainer'
 
 function App() {
 
@@ -13,12 +14,13 @@ function App() {
       <BrowserRouter>
         <CartProvider>
           <Nav />
-          <h1>Clubes - Temporada 2025/2026</h1>
           <div className="contenedor">
             <Routes>
-              <Route path="/" element={<ItemListContainer />} />
+              <Route path="/" element={<ItemListContainer titulo={"Clubes - Temporada 2025/2026"} />} />
+              <Route path="/pais/:pais" element={<ItemListContainer titulo={"Clubes - Temporada 2025/2026"} />} />
               <Route path="/detail/:id" element={<ItemDetailContainer />} />
-              <Route path='/carrito' element={<Cart/>}></Route>
+              <Route path="/carrito" element={<Cart />} />
+              <Route path='/admin' element={<ProductFormContainer />}></Route>
             </Routes>
           </div>
         </CartProvider>

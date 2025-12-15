@@ -6,7 +6,7 @@ export const ItemDetailContainer = () => {
     const [detail, setDetail] = useState({})
     const {id} = useParams()
     useEffect(() => {
-        fetch("/data/data.json")
+        fetch("https://6913fa20f34a2ff1170db941.mockapi.io/clubes")
             .then((response) => {
                 if (!response.ok) {
                     throw new Error("Hubo un problema")
