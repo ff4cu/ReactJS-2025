@@ -2,6 +2,7 @@ import { useState } from "react"
 import { validateProducts } from "../../../utils/validateProducts"
 import { uploadToImgbb } from "../../../services/updateImage"
 import { createProduct } from "../../../services/products"
+import { ProductFormUI } from "../ProductFormUI/ProductFormUI"
 
 export const ProductFormContainer = () => {
     const [loading, setLoading] = useState()
@@ -40,5 +41,5 @@ export const ProductFormContainer = () => {
             setLoading(false)
         }
     }
-    return <ProductFormContainer product={product} errors={errors} onChange={handleChange} onFileChange={setFile} loading={loading} onSubmit={handleSubmit} />
+    return <ProductFormUI product={product} errors={errors} onChange={handleChange} onFileChange={setFile} loading={loading} onSubmit={handleSubmit} />
 }
