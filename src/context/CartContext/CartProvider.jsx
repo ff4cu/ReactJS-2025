@@ -16,6 +16,10 @@ export const CartProvider = ({ children }) => {
             alert(`${item.name} agregado`)
         }
     }
+    const deleteItem = (id) => {
+        const filtered = cart.filter((j) => j.id !== id)
+        setCart(filtered)
+    }
     const clearCart = () => {
         setCart([])
     }
@@ -25,7 +29,7 @@ export const CartProvider = ({ children }) => {
         }
     }
     const values = {
-        cart, addItem, clearCart, getTotalItems
+        cart,exists, addItem, clearCart, getTotalItems, deleteItem
     }
     return <CartContext.Provider value={values}>{children}</CartContext.Provider>
 }
